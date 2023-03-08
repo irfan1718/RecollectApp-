@@ -20,7 +20,7 @@ const PORT = process.env.PORT;
 
 mongoose.set('strictQuery', false);
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGO_URL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
